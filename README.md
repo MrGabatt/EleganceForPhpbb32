@@ -14,4 +14,4 @@ Requirements:
 ## Autor
 [Arty](https://www.artodia.com)
 
-Ported phpBB 3.1.x - 3.2.x version MrGabatt
+Ported phpBB 3.2.x version MrGabatt
