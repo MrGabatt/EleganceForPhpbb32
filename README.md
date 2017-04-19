@@ -8,7 +8,8 @@ Requirements:
 - phpBB 3.2
 - prosilver
 
-## [Download](https://github.com/MrGabatt/EleganceForPhpbb32/archive/master.zip)
+## Download
+https://github.com/MrGabatt/EleganceForPhpbb32/archive/master.zip
 
 
 ## License
