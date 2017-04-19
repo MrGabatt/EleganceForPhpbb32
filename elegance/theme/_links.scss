@@ -219,24 +219,6 @@ a.arrow-down {
 		left: 0;
 	}
 }
-a.arrow-left, .rtl a.arrow-right {
-	@extend %arrow;
-	&:after {
-		content: '\f053';	// fa-chevron-left
-		left: 0;
-		right: auto;
-		padding-top: 1px;
-	}
-}
-a.arrow-right, .rtl a.arrow-left {
-	@extend %arrow;
-	&:after {
-		content: '\f054';	// fa-chevron-right
-		right: 0;
-		left: auto;
-		padding-top: 1px;
-	}
-}
 
 a.arrow-up {
 	padding-left: 10px;
@@ -252,16 +234,8 @@ a.arrow-down:hover {
 	text-decoration: none;
 }
 
-a.arrow-left {
-	padding-left: 12px;
-}
-
 a.arrow-left:hover {
 	text-decoration: none;
-}
-
-a.arrow-right {
-	padding-right: 12px;
 }
 
 a.arrow-right:hover {
