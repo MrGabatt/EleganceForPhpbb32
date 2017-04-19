@@ -8,6 +8,9 @@ Requirements:
 - phpBB 3.2
 - prosilver
 
+## [Download](https://github.com/MrGabatt/EleganceForPhpbb32/archive/master.zip)
+
+
 ## License
 IMPORTANT: This license does not apply to files in directory theme/fonts/
 
