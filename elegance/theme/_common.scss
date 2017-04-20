@@ -1252,6 +1252,7 @@ ul.linklist.bulletin > li.no-bulletin:before {
 }
 
 .dropdown {
+	display: none;
 	position: absolute;
 	left: 0;
 	top: if(unitless($line-height), #{$line-height}em, $line-height);

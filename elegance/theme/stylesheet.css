@@ -800,6 +800,7 @@ ul.linklist.bulletin > li.no-bulletin:before {
   display: block !important; }
 
 .dropdown {
+  display: none;
   position: absolute;
   left: 0;
   top: 1.4em;
