@@ -1647,6 +1647,16 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	margin-top: 10px;
 }
 
+.action-bar .button {
+	margin-right: 5px;
+	float: left;
+}
+
+.action-bar .button-search {
+	margin-right: 0;
+}
+
+
 // Pagination
 // ----------------------------------------
 $pagination-font-size:				$font-size !default;
