@@ -55,7 +55,7 @@
 			<ul class="leftside">
 				<li id="quick-links" class="quick-links tab responsive-menu dropdown-container{% if quick_links_all == '' %} empty{% endif %}">
 					<a href="#" class="nav-link dropdown-trigger">{L_QUICK_LINKS}</a>
-					<div class="dropdown hidden">
+					<div class="dropdown">
 						<div class="pointer"><div class="pointer-inner"></div></div>
 						<ul class="dropdown-contents" role="menu">
 							{{ quick_links_first_block }}
@@ -78,7 +78,7 @@
 				<!-- IF not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) -->
 					<li class="tab members dropdown-container" data-select-match="member" data-responsive-class="small-icon icon-members">
 						<a class="nav-link dropdown-trigger" href="{U_MEMBERLIST}">{L_MEMBERLIST}</a>
-						<div class="dropdown hidden">
+						<div class="dropdown">
 							<div class="pointer"><div class="pointer-inner"></div></div>
 							<ul class="dropdown-contents" role="menu">
 								<!-- IF S_DISPLAY_MEMBERLIST -->
@@ -127,7 +127,7 @@
 					<!-- EVENT navbar_header_user_profile_prepend -->
 					<li id="username_logged_in" class="tab account dropdown-container" data-skip-responsive="true" data-select-match="ucp">
 						<a href="{U_PROFILE}" class="nav-link dropdown-trigger">{CURRENT_USERNAME_SIMPLE}</a>
-						<div class="dropdown hidden">
+						<div class="dropdown">
 							<div class="pointer"><div class="pointer-inner"></div></div>
 							<ul class="dropdown-contents" role="menu">
 								<!-- IF U_RESTORE_PERMISSIONS -->
@@ -274,7 +274,7 @@
 		<!-- ENDIF -->
 		<li class="rightside dropdown-container icon-only">
 			<a href="#" class="dropdown-trigger time" title="{CURRENT_TIME}"><i class="fa fa-clock-o"></i></a>
-			<div class="dropdown hidden">
+			<div class="dropdown">
 				<div class="pointer"><div class="pointer-inner"></div></div>
 				<ul class="dropdown-contents">
 					<li>{CURRENT_TIME}</li>
