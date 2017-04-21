@@ -389,6 +389,83 @@ dl.details dd {
 	color: $primary-color;
 }
 
+/* Icon styles
+---------------------------------------- */
+.icon.icon-blue, a:hover .icon.icon-blue {
+	color: #196db5;
+}
+
+.icon.icon-green, a:hover .icon.icon-green{
+	color: #1b9A1B;
+}
+
+.icon.icon-red, a:hover .icon.icon-red{
+	color: #BC2A4D;
+}
+
+.icon.icon-orange, a:hover .icon.icon-orange{
+	color: #FF6600;
+}
+
+.icon.icon-bluegray, a:hover .icon.icon-bluegray{
+	color: #536482;
+}
+
+.icon.icon-gray, a:hover .icon.icon-gray{
+	color: #777777;
+}
+
+.icon.icon-lightgray, a:hover .icon.icon-lightgray{
+	color: #999999;
+}
+
+.icon.icon-black, a:hover .icon.icon-black{
+	color: #333333;
+}
+
+.alert_close .icon:before {
+	background-color: #FFFFFF;
+}
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+	border-top-color: $dropdown-heading-top;
+}
+
+.jumpbox-cat-link {
+	background-color: $dropdown-heading-top;
+	border-top-color: #0076B1;
+	color: $dropdown-heading-color;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #12A3EB;
+	border-top-color: #12A3EB;
+	color: $dropdown-heading-link-hover-color;
+}
+
+.jumpbox-forum-link {
+	background-color: #E1EBF2;
+}
+
+.jumpbox-forum-link:hover {
+	background-color: #F6F4D0;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #E1EBF2 transparent;
+}
+
+.jumpbox-sub-link {
+	background-color: $dropdown-bg;
+}
+
+.jumpbox-sub-link:hover {
+	background-color: $dropdown-bg;
+}
+
+
+
 // Pagination
 // ----------------------------------------
 
@@ -1410,11 +1487,11 @@ input.disabled {
 .phpbb_alert .alert_close:after {
 	color: $content-background;
 }
-#darken {
+.darken {
 	background-color: #000;
 }
 
-#loading_indicator {
+.loading_indicator {
 	background-color: #000;
 	background-image: url("./images/loading.gif");
 }

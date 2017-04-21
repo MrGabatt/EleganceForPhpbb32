@@ -157,7 +157,9 @@ p.right {
 }
 
 p.jumpbox-return {
-	margin-top: 1em;
+	margin-top: 10px;
+	margin-bottom: 0;
+	float: left;
 }
 
 b, strong {
@@ -1322,19 +1324,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
 $dropdown-content-font-size:	$font-size + 1px !default;
 $dropdown-content-line-height:	$line-height !default;
 
-.dropdown li {
-	border-top: 1px dotted transparent;
-	float: none !important;
-	line-height: $dropdown-content-line-height !important;
-	font-size: $dropdown-content-font-size !important;
-	list-style: none;
-	margin: 0;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	white-space: nowrap;
-	text-align: left;
-}
-
 .dropdown-contents > li {
 	padding-right: 15px;
 	min-width: 180px;
@@ -1969,15 +1958,73 @@ form > p.post-notice strong {
 	line-height: 20px;
 }
 
-#jumpbox {
+.jumpbox {
 	margin: 5px 0;
+}
+
+.jumpbox .dropdown li {
+	border-top: 1px solid transparent;
+}
+
+.jumpbox .dropdown-select {
+	margin: 0;
+}
+
+.jumpbox .dropdown-contents {
+	padding: 0;
+	text-decoration: none;
+}
+
+.jumpbox .dropdown-contents li {
+	padding: 0;
+}
+
+.jumpbox .dropdown-contents a {
+	margin-right: 20px;
+	padding: 5px 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.jumpbox .spacer {
+	display: inline-block;
+	width: 0px;
+}
+
+.jumpbox .spacer + .spacer {
+	width: 20px;
+}
+
+.dropdown-contents a {
+	display: block;
+	padding: 5px;
+}
+
+.jumpbox .dropdown-select {
+	margin: 0;
+}
+
+.jumpbox .dropdown-contents a {
+	text-decoration: none;
+}
+
+.dropdown li {
+	display: list-item;
+	border-top: 1px dotted transparent;
+	float: none !important;
+	line-height: normal !important;
+	font-size: 1em !important;
+	list-style: none;
+	margin: 0;
+	white-space: nowrap;
+	text-align: left;
 }
 
 .stat-block {
 	clear: both;
 }
 
-#top {
+.top {
 	position: absolute;
 	top: -20px;
 }
@@ -2079,18 +2126,23 @@ ul.linklist:after,
 	text-align: left;
 	// text-transform: uppercase;
 	line-height: $dropdown-header-line-height;
+}
 
-	.header_settings {
-		float: right;
-		font-weight: normal;
-		text-transform: none;
-	}
+.dropdown-extended .header .header_settings {
+	float: right;
+	font-weight: normal;
+	text-transform: none;
+}
 
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
+.dropdown-extended .header .header_settings a {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.dropdown-extended .header:after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
 .dropdown-extended .footer {

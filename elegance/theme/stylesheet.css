@@ -125,7 +125,9 @@ p.right {
   text-align: right; }
 
 p.jumpbox-return {
-  margin-top: 1em; }
+  margin-top: 10px;
+  margin-bottom: 0;
+  float: left; }
 
 b, strong {
   font-weight: bold; }
@@ -856,18 +858,6 @@ ul.linklist.bulletin > li.no-bulletin:before {
   border-top-width: 0;
   border-radius: 5px 5px 0 0; }
 
-.dropdown li {
-  border-top: 1px dotted transparent;
-  float: none !important;
-  line-height: 1.4 !important;
-  font-size: 12px !important;
-  list-style: none;
-  margin: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  white-space: nowrap;
-  text-align: left; }
-
 .dropdown-contents > li {
   padding-right: 15px;
   min-width: 180px; }
@@ -1427,13 +1417,60 @@ p.post-notice:before {
 form > p.post-notice strong {
   line-height: 20px; }
 
-#jumpbox {
+.jumpbox {
   margin: 5px 0; }
+
+.jumpbox .dropdown li {
+  border-top: 1px solid transparent; }
+
+.jumpbox .dropdown-select {
+  margin: 0; }
+
+.jumpbox .dropdown-contents {
+  padding: 0;
+  text-decoration: none; }
+
+.jumpbox .dropdown-contents li {
+  padding: 0; }
+
+.jumpbox .dropdown-contents a {
+  margin-right: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: 100%; }
+
+.jumpbox .spacer {
+  display: inline-block;
+  width: 0px; }
+
+.jumpbox .spacer + .spacer {
+  width: 20px; }
+
+.dropdown-contents a {
+  display: block;
+  padding: 5px; }
+
+.jumpbox .dropdown-select {
+  margin: 0; }
+
+.jumpbox .dropdown-contents a {
+  text-decoration: none; }
+
+.dropdown li {
+  display: list-item;
+  border-top: 1px dotted transparent;
+  float: none !important;
+  line-height: normal !important;
+  font-size: 1em !important;
+  list-style: none;
+  margin: 0;
+  white-space: nowrap;
+  text-align: left; }
 
 .stat-block {
   clear: both; }
 
-#top {
+.top {
   position: absolute;
   top: -20px; }
 
@@ -1517,14 +1554,20 @@ ul.linklist:after,
   line-height: 30px; }
   .dropdown-down .dropdown-extended .header {
     margin-top: -3px; }
-  .dropdown-extended .header .header_settings {
-    float: right;
-    font-weight: normal;
-    text-transform: none; }
-  .dropdown-extended .header:after {
-    content: '';
-    display: table;
-    clear: both; }
+
+.dropdown-extended .header .header_settings {
+  float: right;
+  font-weight: normal;
+  text-transform: none; }
+
+.dropdown-extended .header .header_settings a {
+  display: inline-block;
+  padding: 0 5px; }
+
+.dropdown-extended .header:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .dropdown-extended .footer {
   text-align: center;
@@ -4605,6 +4648,64 @@ dl.details dd {
 .sep {
   color: #3462a0; }
 
+/* Icon styles
+---------------------------------------- */
+.icon.icon-blue, a:hover .icon.icon-blue {
+  color: #196db5; }
+
+.icon.icon-green, a:hover .icon.icon-green {
+  color: #1b9A1B; }
+
+.icon.icon-red, a:hover .icon.icon-red {
+  color: #BC2A4D; }
+
+.icon.icon-orange, a:hover .icon.icon-orange {
+  color: #FF6600; }
+
+.icon.icon-bluegray, a:hover .icon.icon-bluegray {
+  color: #536482; }
+
+.icon.icon-gray, a:hover .icon.icon-gray {
+  color: #777777; }
+
+.icon.icon-lightgray, a:hover .icon.icon-lightgray {
+  color: #999999; }
+
+.icon.icon-black, a:hover .icon.icon-black {
+  color: #333333; }
+
+.alert_close .icon:before {
+  background-color: #FFFFFF; }
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+  border-top-color: #3462a0; }
+
+.jumpbox-cat-link {
+  background-color: #3462a0;
+  border-top-color: #0076B1;
+  color: #fff; }
+
+.jumpbox-cat-link:hover {
+  background-color: #12A3EB;
+  border-top-color: #12A3EB;
+  color: #fff; }
+
+.jumpbox-forum-link {
+  background-color: #E1EBF2; }
+
+.jumpbox-forum-link:hover {
+  background-color: #F6F4D0; }
+
+.jumpbox .dropdown .pointer-inner {
+  border-color: #E1EBF2 transparent; }
+
+.jumpbox-sub-link {
+  background-color: #f4f4f4; }
+
+.jumpbox-sub-link:hover {
+  background-color: #f4f4f4; }
+
 .pagination li a {
   color: #3462a0;
   background-color: #f4f4f4;
@@ -5372,10 +5473,10 @@ input.disabled {
 .phpbb_alert .alert_close:after {
   color: #e4e4e4; }
 
-#darken {
+.darken {
   background-color: #000; }
 
-#loading_indicator {
+.loading_indicator {
   background-color: #000;
   background-image: url("./images/loading.gif"); }
 
