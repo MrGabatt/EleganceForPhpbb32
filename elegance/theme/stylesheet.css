@@ -2981,6 +2981,9 @@ a.post {
   float: left;
   padding: 8px; }
 
+.phpbb_icq-icon:after, .phpbb_aol-icon:after {
+  font-family: 'Glyphicons Regular', 'Glyphicons'; }
+
 .contact-icons .last-cell {
   border-right: none; }
 
@@ -2989,6 +2992,46 @@ a.post {
 
 .contact-icons div {
   clear: left; }
+
+.pm-icon:after {
+  content: '\f086'; }
+
+.email-icon:after {
+  content: '\f0e0'; }
+
+.jabber-icon:after {
+  content: '\f0eb';
+  font-size: 16px; }
+
+.phpbb_icq-icon:after {
+  content: '\2698'; }
+
+.phpbb_wlm-icon:after {
+  content: '\f007'; }
+
+.phpbb_aol-icon:after {
+  content: '\E563'; }
+
+.phpbb_website-icon:after {
+  content: '\f08e'; }
+
+.phpbb_youtube-icon:after {
+  content: '\f16a'; }
+
+.phpbb_facebook-icon:after {
+  content: '\f230'; }
+
+.phpbb_googleplus-icon:after {
+  content: '\f0d5'; }
+
+.phpbb_skype-icon:after {
+  content: '\f17e'; }
+
+.phpbb_twitter-icon:after {
+  content: '\f099'; }
+
+.phpbb_yahoo-icon:after {
+  content: '\f19e'; }
 
 .post-buttons {
   float: right;
@@ -5121,6 +5164,46 @@ dd.profile-warnings {
 
 .icon-time:after {
   color: #9f9f9f; }
+
+/* Profile & navigation icons */
+.pm-icon {
+  background-position: 0 0; }
+
+.email-icon {
+  background-position: -21px 0; }
+
+.jabber-icon {
+  background-position: -80px 0; }
+
+.phpbb_icq-icon {
+  background-position: -61px 0; }
+
+.phpbb_wlm-icon {
+  background-position: -182px 0; }
+
+.phpbb_aol-icon {
+  background-position: -244px 0; }
+
+.phpbb_website-icon {
+  background-position: -40px 0; }
+
+.phpbb_youtube-icon {
+  background-position: -98px 0; }
+
+.phpbb_facebook-icon {
+  background-position: -119px 0; }
+
+.phpbb_googleplus-icon {
+  background-position: -140px 0; }
+
+.phpbb_skype-icon {
+  background-position: -161px 0; }
+
+.phpbb_twitter-icon {
+  background-position: -203px 0; }
+
+.phpbb_yahoo-icon {
+  background-position: -224px 0; }
 
 .global_read, .global_read_mine, .announce_read_mine, .announce_read {
   background-image: url("./images/announce_read.png"); }
