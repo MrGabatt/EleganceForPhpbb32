@@ -1529,6 +1529,12 @@ ul.linklist:after,
   content: '';
   display: block; }
 
+.emoji {
+  min-height: 18px;
+  min-width: 18px;
+  height: 1em;
+  width: 1em; }
+
 .hidden {
   display: none; }
 
