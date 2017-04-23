@@ -1698,13 +1698,17 @@ $pagination-link-line-height:		$font-size !default;
 .pagination {
 	float: right;
 	font-size: $font-size;
-	margin-top: 3px;
 	text-align: right;
 	width: auto;
 }
 
 .action-bar.bottom .pagination {
 	margin-top: 0;
+}
+
+.action-bar .pagination .button {
+	margin-right: 0;
+	float: none;
 }
 
 .pagination > ul {
@@ -1722,16 +1726,20 @@ $pagination-link-line-height:		$font-size !default;
 }
 
 .pagination li a, .pagination li span {
-	border: 1px solid transparent;
 	border-radius: 2px;
-	display: block;
-	font-size: $pagination-link-font-size;
+	padding: 2px 5px;
+}
+
+.pagination li.active span {
+	display: inline-block;
+	font-size: 13px;
 	font-weight: normal;
-	line-height: $pagination-link-line-height;
-	min-width: 10px;
-	padding: 3px;
+	font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+	line-height: 1.4;
 	text-align: center;
-	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
 }
 
 .pagination li.ellipsis span {
@@ -1743,50 +1751,27 @@ $pagination-link-line-height:		$font-size !default;
 	margin-right: 5px;
 }
 
-.pagination li.page-jump a, .pagination li.next a, .pagination li.previous a {
-	position: relative;
-	font-size: 0;
-	height: $pagination-link-line-height;
-	width: $pagination-link-font-size;
-	padding: 3px;
-}
-
 .pagination li.page-jump a {
-	width: $pagination-font-size + 4px;
 	background: transparent none !important;
 	border-color: transparent !important;
-	padding-left: 0;
-	padding-right: 0;
+	padding: 0 8px;
 }
 
-.pagination li.page-jump a:after, .pagination li.next a:after, .pagination li.previous a:after {
-	position: absolute;
-	left: 3px;
-	right: 3px;
-	top: 4px;
-	height: $pagination-link-line-height;
-	font-size: $pagination-link-font-size;
-	line-height: $pagination-link-line-height;
-	text-align: center;
-	font-weight: normal;
-	text-indent: 0;
-	font-family: FontAwesome;
-	content: '\f08e';	// fa-external-link
+.pagination li.page-jump a i {
+	font-size: 21px;
 }
 
-.pagination li.page-jump a:after {
-	font-size: $pagination-font-size;
+.pagination .arrow a {
+	padding: 2px 0;
 }
 
-.rtl .pagination li.previous a:after,
-.pagination li.next a:after {
+.rtl .pagination li.previous a:after {
 	content: '\f054';	// fa-chevron-right
 	right: 1px;
 	left: 3px;
 }
 
-.rtl .pagination li.next a:after,
-.pagination li.previous a:after {
+.rtl .pagination li.next a:after {
 	content: '\f053';	// fa-chevron-left
 	left: 1px;
 	right: 3px;
@@ -1795,9 +1780,7 @@ $pagination-link-line-height:		$font-size !default;
 // Pagination in viewforum for multipage topics
 .row .pagination {
 	display: block;
-	margin-top: 0;
-	padding: 1px 0;
-	font-size: $pagination-link-font-size;
+	margin-top: 0.3em;
 }
 
 .row .pagination > ul {
@@ -1805,8 +1788,15 @@ $pagination-link-line-height:		$font-size !default;
 }
 
 .row .pagination li a, .row .pagination li span {
-	border-radius: 1px;
-	padding: 2px 1px;
+	border-radius: 2px;
+	padding: 1px 3px;
+	font-size: 9px;
+}
+
+.topic-poster {
+	float: left;
+	padding-right: 0.5em;
+	margin-top: 0.3em;
 }
 
 // jQuery popups
