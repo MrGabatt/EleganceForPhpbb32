@@ -201,7 +201,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 	padding: 10px;
 }
 
-.wrap {
+#wrap {
 	@if $use-wrapper {
 		border: 1px solid transparent;
 		border-radius: 8px;
@@ -233,10 +233,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 
 .page-body {
 	margin: 4px 0;
-	.wrap > &:first-of-type {
+	#wrap > &:first-of-type {
 		margin-top: 0;
 	}
-	.wrap > &:last-of-type {
+	#wrap > &:last-of-type {
 		margin-bottom: 0;
 	}
 	clear: both;
@@ -244,7 +244,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 
 .page-footer {
 	clear: both;
-	.wrap + & {
+	#wrap + & {
 		margin-top: 5px;
 	}
 }
@@ -794,7 +794,7 @@ $nav-alert-font-size:		9px !default;
 			@if $use-wrapper {
 				// Add spacing between top of wrapper and tabs on mobile devices
 				@media (max-width: 700px) {
-					.wrap > div:first-child > &:first-child:before {
+					#wrap > div:first-child > &:first-child:before {
 						content: '';
 						display: block;
 						height: 10px;
@@ -914,7 +914,7 @@ $nav-alert-font-size:		9px !default;
 		opacity: .9;
 		transition: opacity .2s;
 		@if $use-wrapper {
-			.wrap & > .static-inner {
+			#wrap & > .static-inner {
 				@include wrapper-padding;
 			}
 		}
@@ -1391,7 +1391,7 @@ $dropdown-content-line-height:	$line-height !default;
 	padding-left: 18px;
 }
 
-.wrap .dropdown li, .dropdown.wrap li, .dropdown-extended li {
+#wrap .dropdown li, .dropdown.wrap li, .dropdown-extended li {
 	white-space: normal;
 }
 
