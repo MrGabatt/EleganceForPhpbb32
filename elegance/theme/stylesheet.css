@@ -153,7 +153,7 @@ ul ul, ol ul {
 ol ol ul, ol ul ul, ul ol ul, ul ul ul {
   list-style-type: square; }
 
-.wrap {
+#wrap {
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 10px; }
@@ -173,14 +173,14 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 .page-body {
   margin: 4px 0;
   clear: both; }
-  .wrap > .page-body:first-of-type {
+  #wrap > .page-body:first-of-type {
     margin-top: 0; }
-  .wrap > .page-body:last-of-type {
+  #wrap > .page-body:last-of-type {
     margin-bottom: 0; }
 
 .page-footer {
   clear: both; }
-  .wrap + .page-footer {
+  #wrap + .page-footer {
     margin-top: 5px; }
 
 .page-footer h3 {
@@ -501,7 +501,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
     max-width: none;
     opacity: .9;
     transition: opacity .2s; }
-    .wrap .navbar .inner.static > .static-inner {
+    #wrap .navbar .inner.static > .static-inner {
       padding: 10px; }
     .navbar .inner.static > .static-inner {
       box-sizing: border-box;
@@ -914,7 +914,7 @@ ul.linklist.bulletin > li.no-bulletin:before {
   border-top: 1px dotted transparent;
   padding-left: 18px; }
 
-.wrap .dropdown li, .dropdown.wrap li, .dropdown-extended li {
+#wrap .dropdown li, .dropdown.wrap li, .dropdown-extended li {
   white-space: normal; }
 
 .dropdown li.separator {
