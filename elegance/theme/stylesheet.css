@@ -91,7 +91,6 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type: square; }
 .logo:hover { text-decoration: none; }
 
 .site-description h1, .site-description p.sitename { margin-left: 0; margin-right: 0; }
-.site-description h1, .site-description p { display: none; }
 
 .headerbar > .inner { position: relative; }
 
@@ -724,6 +723,7 @@ ul.topiclist li { display: block; list-style-type: none; margin: 0; }
 .forabg ul.topiclist li.header .forum-toggle:after, .forumbg ul.topiclist li.header .forum-toggle:after { content: '\E192'; font-family: 'Glyphicons Regular', 'Glyphicons'; position: absolute; top: 0; left: 0; width: 16px; height: 16px; font-size: 12px; line-height: 16px; }
 .forabg ul.topiclist li.header .forum-toggle.toggled:after, .forumbg ul.topiclist li.header .forum-toggle.toggled:after { content: '\E191'; }
 .forabg ul.topiclist li.header .forum-toggle:hover, .forumbg ul.topiclist li.header .forum-toggle:hover { opacity: 1; }
+.rtl .forabg ul.topiclist li.header .forum-toggle, .rtl .forumbg ul.topiclist li.header .forum-toggle { right: auto; left: 4px; }
 
 ul.topiclist dl { position: relative; }
 
@@ -778,9 +778,9 @@ li.header dl dt, li.header dl dd { min-height: 0; }
 
 .forabg li.header dl.row-item dt .list-inner { padding-left: 0; padding-right: 50px; }
 
-dl.row-item { background-position: 10px 50%; background-repeat: no-repeat; }
+dl.row-item { background-position: 10px 50%; background-repeat: no-repeat; background-size: 32px; }
 
-dl.row-item dt { background-repeat: no-repeat; background-position: 5px 95%; }
+dl.row-item dt { background-repeat: no-repeat; background-position: 5px 95%; background-size: 17px; }
 
 dl.row-item dt .list-inner { padding-left: 55px; position: relative; padding-top: 5px; padding-bottom: 5px; }
 li.header dl.row-item dt .list-inner { padding-top: 0; padding-bottom: 0; }

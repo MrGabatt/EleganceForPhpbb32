@@ -44,6 +44,10 @@ ul.topiclist li {
 			&:hover {
 				opacity: 1;
 			}
+			.rtl & {
+				right: auto;
+				left: 4px;
+			}			
 		}
 	}
 }
@@ -230,15 +234,16 @@ li.header dl.row-item dt .list-inner {
 	}
 }
 
-// Forum list column styles
 dl.row-item {
 	background-position: 10px 50%;		// Position of folder icon
 	background-repeat: no-repeat;
+	background-size: 32px;
 }
 
 dl.row-item dt {
 	background-repeat: no-repeat;
 	background-position: 5px 95%;		// Position of topic icon
+	background-size: 17px;
 }
 
 dl.row-item dt .list-inner {
