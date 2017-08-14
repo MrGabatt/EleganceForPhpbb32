@@ -91,6 +91,7 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type: square; }
 .logo:hover { text-decoration: none; }
 
 .site-description h1, .site-description p.sitename { margin-left: 0; margin-right: 0; }
+.site-description h1, .site-description p { display: none; }
 
 .headerbar > .inner { position: relative; }
 
@@ -230,6 +231,8 @@ ul.leftside { float: left; margin-left: 0; margin-right: 5px; text-align: left; 
 ul.rightside { float: right; margin-left: 5px; margin-right: -5px; text-align: right; }
 
 ul.linklist li.responsive-menu { position: relative; margin: 0 5px; }
+
+.fa-bars:before { display: none; }
 
 ul.linklist li.responsive-menu a.responsive-menu-link { display: inline-block; margin: 0 5px; font-size: 17px; position: relative; width: 17px; line-height: 21px; text-decoration: none; }
 
@@ -723,7 +726,6 @@ ul.topiclist li { display: block; list-style-type: none; margin: 0; }
 .forabg ul.topiclist li.header .forum-toggle:after, .forumbg ul.topiclist li.header .forum-toggle:after { content: '\E192'; font-family: 'Glyphicons Regular', 'Glyphicons'; position: absolute; top: 0; left: 0; width: 16px; height: 16px; font-size: 12px; line-height: 16px; }
 .forabg ul.topiclist li.header .forum-toggle.toggled:after, .forumbg ul.topiclist li.header .forum-toggle.toggled:after { content: '\E191'; }
 .forabg ul.topiclist li.header .forum-toggle:hover, .forumbg ul.topiclist li.header .forum-toggle:hover { opacity: 1; }
-.rtl .forabg ul.topiclist li.header .forum-toggle, .rtl .forumbg ul.topiclist li.header .forum-toggle { right: auto; left: 4px; }
 
 ul.topiclist dl { position: relative; }
 
