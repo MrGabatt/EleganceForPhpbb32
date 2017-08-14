@@ -8,6 +8,16 @@ Requirements:
 - phpBB 3.2
 - prosilver
 
+Style come with 7 color variations :
+- Elegance
+- Elegance Aqua
+- Elegance Green
+- Elegance Light Blue
+- Elegance Soft Blue
+- Elegance Soft Green
+- Elegance Steel Blue
+
+
 ## Download
 https://github.com/MrGabatt/EleganceForPhpbb32/archive/master.zip
 
