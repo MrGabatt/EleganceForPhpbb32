@@ -9,7 +9,7 @@ Requirements:
 - prosilver
 
 Style come with 7 color variations :
-- Elegance
+- Elegance (default)
 - Elegance Aqua
 - Elegance Green
 - Elegance Light Blue
