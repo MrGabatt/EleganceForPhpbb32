@@ -329,8 +329,9 @@ ul.navlinks {
 // ----------------------
 .forumtitle {
 	.forum_unread &,
+	.forum_unread_subforum &,
 	.forum_unread_locked & {
-		color: $link-hover-color;
+		color: $secondary-color;
 	}
 }
 

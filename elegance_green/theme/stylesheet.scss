@@ -20,13 +20,17 @@
 */
 @import "custom_config";
 @import "style_config";
-@import "common";
-@import "links";
-@import "content";
-@import "buttons";
-@import "cp";
-@import "forms";
-@import "imageset";
-@import "responsive";
+@import "../../elegance/theme/common";
+@import "../../elegance/theme/links";
+@import "../../elegance/theme/content";
+@import "../../elegance/theme/buttons";
+@import "../../elegance/theme/cp";
+@import "../../elegance/theme/forms";
+@import "../../elegance/theme/imageset";
+@import "../../elegance/theme/responsive";
 @import "colours";
 @import "custom";
+@import "../../elegance/theme/icons";
+@import "../../elegance/theme/normalize";
+@import "../../elegance/theme/utilities";
+
