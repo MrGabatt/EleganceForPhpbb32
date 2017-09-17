@@ -8,7 +8,7 @@ Requirements:
 - phpBB 3.2.1
 - prosilver
 
-Style come with 7 color variations :
+Style come with 7 color variations:
 - Elegance (default)
 - Elegance Aqua
 - Elegance Green
@@ -17,10 +17,10 @@ Style come with 7 color variations :
 - Elegance Soft Green
 - Elegance Steel Blue
 
-How to install a color declination
+How to install a color declination:
 The color variations for Elegance are available as inherited styles.
 
-Prerequisites
+Prerequisites:
 To install a color variation, you must first install the Elegance style.
 
 
